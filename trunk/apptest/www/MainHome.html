@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="themes/pj.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="themes/Pj_Custom.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.structure-1.4.2.min.css" />
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.js"></script>
+    <script src="js/jquerymobile/jquery.mobile-1.4.2.min.js"></script>
+    <script type="text/javascript">
+        function validate() {
+            window.location = "Order.html";
+        }
+        function onLoad() {
+            document.addEventListener("deviceready", onDeviceReady, false);
+        }
+        function onDeviceReady() {
+            // Register the event listener
+            document.addEventListener("backbutton", onBackKeyDown, false);
+        }
+        function onBackKeyDown() {
+            //alert("back pressed");
+            if (confirm("Would you like to exit?")) {
+                navigator.app.exitApp();
+            }
+        }
+
+    </script>
+</head>
+<body onload="onLoad();">
+    <div data-role="page" data-add-back-btn="true">
+        <!--        <div data-role="header">
+            <h1>Home</h1>
+        </div>-->
+        <div class="ui-header ui-bar-a" role="banner" data-role="header" data-form="ui-bar-a" data-theme="a" data-swatch="a">
+            <a role="button" data-role="button" class="ui-btn-left ui-btn-corner-all ui-btn ui-icon-home ui-btn-icon-notext ui-shadow" title=" Home " data-form="ui-icon">Home </a>
+            <h1 class="ui-title" tabindex="0" role="heading" aria-level="1">Home</h1>
+            <a role="button" data-role="button" class="ui-btn-right ui-btn-corner-all ui-btn ui-icon-grid ui-btn-icon-notext ui-shadow" title=" Navigation " data-form="ui-icon">Navigation </a>
+        </div>
+
+
+        <div data-role="content">
+            <section class="cf">
+                <table class="home_tbl">
+                    <tr>
+                        <td>
+                            <a data-theme="a" href="Order.html" data-form="ui-link-a" class="ui-link"><img src="img/order.png" /></a></td>
+                        <td>
+                            <a data-theme="a" href="Item.html" data-form="ui-link-a" class="ui-link"><img src="img/item.png" /></a></td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="home_txt"><a data-theme="a" href="Order.html" data-form="ui-link-a" class="ui-link">Orders</a></div>
+                        </td>
+                        <td>
+                            <div class="home_txt"><a data-theme="a" href="Item.html" data-form="ui-link-a" class="ui-link">Items</a></div>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <a data-theme="a" href="invoice.html" data-form="ui-link-a" class="ui-link"><img src="img/invoice.png" /></a>
+                        </td>
+                        <td>
+                            <a data-theme="a" href="Settings.html" data-form="ui-link-a" class="ui-link"><img src="img/settings.png" /></a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="home_txt"><a data-theme="a" href="invoice.html" data-form="ui-link-a" class="ui-link">Invoices</a></div>
+                        </td>
+                        <td>
+                            <div class="home_txt"><a data-theme="a" href="Settings.html" data-form="ui-link-a" class="ui-link">Settings</a></div>
+                        </td>
+
+                    </tr>
+                </table>
+
+            </section>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h1>XMX Solution</h1>
+        </div>
+    </div>
+</body>
+</html>

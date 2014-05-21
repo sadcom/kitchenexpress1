@@ -1,0 +1,140 @@
+10
+
+dir
+0
+https://github.com/sadcom/kitchenexpress.git/trunk/apptest/www
+https://github.com/sadcom/kitchenexpress.git
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a727069c-d8eb-30ad-87a4-ce57b7db7bff
+
+Web.config
+file
+
+
+
+add
+
+OrderDetails.html
+file
+
+
+
+add
+
+www
+dir
+
+
+
+add
+
+themes
+dir
+
+
+
+add
+
+css
+dir
+
+
+
+add
+
+Invoice.html
+file
+
+
+
+add
+
+MainHome.html
+file
+
+
+
+add
+
+Item.html
+file
+
+
+
+add
+
+Settings.html
+file
+
+
+
+add
+
+HtmlPage.html
+file
+
+
+
+add
+
+ItemDetails.html
+file
+
+
+
+add
+
+index.html
+file
+
+
+
+add
+
+login.html
+file
+
+
+
+add
+
+img
+dir
+
+
+
+add
+
+js
+dir
+
+
+
+add
+
+Order.html
+file
+
+
+
+add
+

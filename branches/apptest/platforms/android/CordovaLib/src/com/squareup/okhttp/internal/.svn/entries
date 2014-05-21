@@ -1,0 +1,112 @@
+10
+
+dir
+0
+https://github.com/sadcom/kitchenexpress.git/trunk/apptest/platforms/android/CordovaLib/src/com/squareup/okhttp/internal
+https://github.com/sadcom/kitchenexpress.git
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a727069c-d8eb-30ad-87a4-ce57b7db7bff
+
+http
+dir
+
+
+
+add
+
+spdy
+dir
+
+
+
+add
+
+AbstractOutputStream.java
+file
+
+
+
+add
+
+DiskLruCache.java
+file
+
+
+
+add
+
+tls
+dir
+
+
+
+add
+
+StrictLineReader.java
+file
+
+
+
+add
+
+Base64.java
+file
+
+
+
+add
+
+Dns.java
+file
+
+
+
+add
+
+Platform.java
+file
+
+
+
+add
+
+NamedRunnable.java
+file
+
+
+
+add
+
+FaultRecoveringOutputStream.java
+file
+
+
+
+add
+
+Util.java
+file
+
+
+
+add
+

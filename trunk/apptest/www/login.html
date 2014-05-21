@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" href="themes/pj.min.css" />
+    <link rel="stylesheet" href="themes/Pj_Custom.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.structure-1.4.2.min.css" />
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.js"></script>
+    <script src="js/jquerymobile/jquery.mobile-1.4.2.min.js"></script>
+    <script type="text/javascript">
+        //function validate() {
+        //    var username = document.getElementById("emailid").value.toString();
+        //    var password = document.getElementById("pass").value.toString();
+        //    if (username.length > 0 && password.length > 0) {
+        //        var xmlhttp;
+        //        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+        //            xmlhttp = new XMLHttpRequest();
+        //        }
+        //        else {// code for IE6, IE5
+        //            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        //        }
+        //        var url = "http://localhost:1160/Default.aspx?uname=" + username + "&pass=" + password;
+        //        xmlhttp.onreadystatechange = function () {
+        //            //if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+        //            if (xmlhttp.readyState == 4) {
+        //                var value = xmlhttp.responseText;
+        //                if (value)
+        //                    window.location = "MainHome.html";
+        //                else
+        //                    alert("Invalid username or password");
+                        
+        //            }
+        //        }
+        //        xmlhttp.open("Get", url, true);
+        //        xmlhttp.send();
+                
+        //    }
+            
+        //}
+        
+        
+        function validate() {
+            var username = document.getElementById("emailid").value.toString();
+            var password = document.getElementById("pass").value.toString();
+         
+            if (username.length > 0 && password.length > 0) {
+                jsonp("http://localhost:1160/Default.aspx", "c", "callbackfunction", "uname=" + username +"&pass=" +password);
+                //$.ajax({
+                //    url: "http://localhost:1160/Default.aspx",
+                //    data: { uname: username,pass:password },
+                //    type: 'GET',
+                //    dataType:"json",
+                //    success:function(person){
+                //        alert(person);
+                //    }
+                    //crossDomain: true,
+                    //type: "GET",
+                    //contentType: "application/json; charset=utf-8",
+                    //async: false,
+                    //url: "http://localhost:1160/Default.aspx",
+                    //data: { uname: username,pass:password },
+                    //dataType: "json",
+                    //jsonpCallback: 'myCallback'
+                    
+                //});
+
+            }
+
+        }
+        function callbackfunction(data) {
+            if (data.toString() == "1") {
+                window.location = "MainHome.html";
+            }
+            else {
+                alert("Invalid username or password");
+            }
+        }
+        function jsonp(url, callback, name, query) {
+            if (url.indexOf("?") > -1)
+                url += "&jsonp="
+            else
+                url += "?jsonp="
+            url += name + "&";
+            if (query)
+                url += encodeURIComponent(query) + "&";
+            url += new Date().getTime().toString(); // prevent caching        
+
+            var script = document.createElement("script");
+            script.setAttribute("src", url);
+            script.setAttribute("type", "text/javascript");
+            document.body.appendChild(script);
+        }
+        function onLoad() {
+            document.addEventListener("deviceready", onDeviceReady, false);
+        }
+        function onDeviceReady() {
+            // Register the event listener
+            document.addEventListener("backbutton", onBackKeyDown, false);
+        }
+        function onBackKeyDown() {
+            //alert("back pressed");
+            if (confirm("Would you like to exit?")) {
+                navigator.app.exitApp();
+            }
+        }
+
+    </script>
+</head>
+<body onload="onLoad();">
+    <div data-role="page" data-add-back-btn="true">
+        <div data-role="header">
+            <div class="ui-header ui-bar-a" role="banner" data-role="header" data-form="ui-bar-a" data-theme="a" data-swatch="a">
+                <a role="button" data-role="button" class="ui-btn-left ui-btn-corner-all ui-btn ui-icon-home ui-btn-icon-notext ui-shadow" title=" Home " data-form="ui-icon">Home </a>
+                <h1 class="ui-title" tabindex="0" role="heading" aria-level="1">Please Login</h1>
+                <a role="button" data-role="button" class="ui-btn-right ui-btn-corner-all ui-btn ui-icon-grid ui-btn-icon-notext ui-shadow" title=" Navigation " data-form="ui-icon">Navigation </a>
+            </div>
+        </div>
+        <div data-role="content">
+            <section class="loginform cf">
+                <table name="login">
+                    <tr>
+                        <td>
+                            <label for="usermail">Email</label>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="email" name="usermail" id="emailid" placeholder="yourname@email.com">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="password">Password</label>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="password" name="password" id="pass" placeholder="password"></li>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <input type="submit" value="Login" onclick="validate();" data-form="ui-btn-up-a" data-theme="a" data-icon="star" class=" ui-btn ui-btn-a ui-icon-star ui-btn-icon-left ui-shadow ui-corner-all"></input>
+                        </td>
+
+                    </tr>
+                </table>
+
+            </section>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h1>XMX Solution</h1>
+        </div>
+    </div>
+
+</body>
+</html>

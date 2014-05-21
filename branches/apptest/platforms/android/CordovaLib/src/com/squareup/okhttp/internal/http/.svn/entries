@@ -1,0 +1,161 @@
+10
+
+dir
+0
+https://github.com/sadcom/kitchenexpress.git/trunk/apptest/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/http
+https://github.com/sadcom/kitchenexpress.git
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a727069c-d8eb-30ad-87a4-ce57b7db7bff
+
+RouteSelector.java
+file
+
+
+
+add
+
+Policy.java
+file
+
+
+
+add
+
+AbstractHttpInputStream.java
+file
+
+
+
+add
+
+HttpURLConnectionImpl.java
+file
+
+
+
+add
+
+HttpEngine.java
+file
+
+
+
+add
+
+HeaderParser.java
+file
+
+
+
+add
+
+HttpAuthenticator.java
+file
+
+
+
+add
+
+OkResponseCacheAdapter.java
+file
+
+
+
+add
+
+HttpDate.java
+file
+
+
+
+add
+
+RequestHeaders.java
+file
+
+
+
+add
+
+RawHeaders.java
+file
+
+
+
+add
+
+RetryableOutputStream.java
+file
+
+
+
+add
+
+HttpsURLConnectionImpl.java
+file
+
+
+
+add
+
+HttpsEngine.java
+file
+
+
+
+add
+
+ResponseHeaders.java
+file
+
+
+
+add
+
+HttpTransport.java
+file
+
+
+
+add
+
+SpdyTransport.java
+file
+
+
+
+add
+
+Transport.java
+file
+
+
+
+add
+
+UnknownLengthHttpInputStream.java
+file
+
+
+
+add
+

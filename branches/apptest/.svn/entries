@@ -1,0 +1,91 @@
+10
+
+dir
+0
+https://github.com/sadcom/kitchenexpress.git/trunk/apptest
+https://github.com/sadcom/kitchenexpress.git
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a727069c-d8eb-30ad-87a4-ce57b7db7bff
+
+plugins
+dir
+
+
+
+add
+
+merges
+dir
+
+
+
+add
+
+hooks
+dir
+
+
+
+add
+
+config.xml
+file
+
+
+
+add
+
+www
+dir
+
+
+
+add
+
+www1
+dir
+
+
+
+add
+
+platforms
+dir
+
+
+
+add
+
+www.rar
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+

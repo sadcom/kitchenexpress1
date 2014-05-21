@@ -1,0 +1,175 @@
+10
+
+dir
+0
+https://github.com/sadcom/kitchenexpress.git/trunk/apptest/platforms/android/ant-build
+https://github.com/sadcom/kitchenexpress.git
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a727069c-d8eb-30ad-87a4-ce57b7db7bff
+
+R.txt
+file
+
+
+
+add
+
+rsObj
+dir
+
+
+
+add
+
+apptesting-debug-unaligned.apk
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+AndroidManifest.xml.d
+file
+
+
+
+add
+
+res
+dir
+
+
+
+add
+
+classes
+dir
+
+
+
+add
+
+rsLibs
+dir
+
+
+
+add
+
+classes.dex.d
+file
+
+
+
+add
+
+apptesting.ap_.d
+file
+
+
+
+add
+
+proguard.txt
+file
+
+
+
+add
+
+apptesting-debug-unaligned.apk.d
+file
+
+
+
+add
+
+AndroidManifest.cordova.xml
+file
+
+
+
+add
+
+dexedLibs
+dir
+
+
+
+add
+
+classes.dex
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+apptesting.ap_
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+apptesting-debug.apk
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+build.prop
+file
+
+
+
+add
+

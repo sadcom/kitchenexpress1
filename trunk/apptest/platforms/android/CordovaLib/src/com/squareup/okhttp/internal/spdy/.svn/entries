@@ -1,0 +1,126 @@
+10
+
+dir
+0
+https://github.com/sadcom/kitchenexpress.git/trunk/apptest/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/spdy
+https://github.com/sadcom/kitchenexpress.git
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a727069c-d8eb-30ad-87a4-ce57b7db7bff
+
+SpdyConnection.java
+file
+
+
+
+add
+
+HeadersMode.java
+file
+
+
+
+add
+
+Settings.java
+file
+
+
+
+add
+
+Spdy3.java
+file
+
+
+
+add
+
+ErrorCode.java
+file
+
+
+
+add
+
+Variant.java
+file
+
+
+
+add
+
+Hpack.java
+file
+
+
+
+add
+
+FrameWriter.java
+file
+
+
+
+add
+
+Http20Draft06.java
+file
+
+
+
+add
+
+NameValueBlockReader.java
+file
+
+
+
+add
+
+SpdyStream.java
+file
+
+
+
+add
+
+FrameReader.java
+file
+
+
+
+add
+
+IncomingStreamHandler.java
+file
+
+
+
+add
+
+Ping.java
+file
+
+
+
+add
+

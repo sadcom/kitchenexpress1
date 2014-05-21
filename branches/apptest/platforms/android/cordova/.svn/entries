@@ -1,0 +1,133 @@
+10
+
+dir
+0
+https://github.com/sadcom/kitchenexpress.git/trunk/apptest/platforms/android/cordova
+https://github.com/sadcom/kitchenexpress.git
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a727069c-d8eb-30ad-87a4-ce57b7db7bff
+
+log
+file
+
+
+
+add
+
+clean
+file
+
+
+
+add
+
+version
+file
+
+
+
+add
+
+log.bat
+file
+
+
+
+add
+
+android_sdk_version
+file
+
+
+
+add
+
+clean.bat
+file
+
+
+
+add
+
+version.bat
+file
+
+
+
+add
+
+build
+file
+
+
+
+add
+
+run
+file
+
+
+
+add
+
+build.bat
+file
+
+
+
+add
+
+lib
+dir
+
+
+
+add
+
+defaults.xml
+file
+
+
+
+add
+
+check_reqs
+file
+
+
+
+add
+
+run.bat
+file
+
+
+
+add
+
+node_modules
+dir
+
+
+
+add
+

@@ -1,0 +1,237 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="themes/pj.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.structure-1.4.2.min.css" />
+    <link rel="stylesheet" href="themes/Pj_Custom.css" />
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.js"></script>
+    <script src="js/jquerymobile/jquery.mobile-1.4.2.min.js"></script>
+    <script type="text/javascript">
+        function onLoad() {
+            document.addEventListener("deviceready", onDeviceReady, false);
+        }
+        function onDeviceReady() {
+            // Register the event listener
+            document.addEventListener("backbutton", onBackKeyDown, false);
+        }
+        function onBackKeyDown() {
+            if (confirm("Would you like to logout?")) {
+                window.location = "login.html";
+            }
+        }
+    </script>
+</head>
+<body onload="onLoad();">
+
+
+    <div data-role="page" data-add-back-btn="true">
+        <div class="ui-header ui-bar-a" role="banner" data-role="header" data-form="ui-bar-a" data-theme="a" data-swatch="a">
+            <a role="button" data-role="button" class="ui-btn-left ui-btn-corner-all ui-btn ui-icon-home ui-btn-icon-notext ui-shadow" title=" Home " data-form="ui-icon">Home </a>
+            <h1 class="ui-title" tabindex="0" role="heading" aria-level="1">Order No : 86542454542121</h1>
+            <a role="button" data-role="button" class="ui-btn-right ui-btn-corner-all ui-btn ui-icon-grid ui-btn-icon-notext ui-shadow" title=" Navigation " data-form="ui-icon">Navigation </a>
+        </div>
+        <div data-role="content">
+
+            <div data-demo-html="true">
+                <div data-role="tabs">
+                    <div data-role="navbar">
+                        <ul>
+                            <li><a href="#one" data-theme="a" data-ajax="false">Order</a></li>
+                            <li><a href="#two" data-theme="a" data-ajax="false">Details</a></li>
+                            <li><a href="#three" data-theme="a" data-ajax="false">Invoice</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="one" class="ui-content">
+                        <ul data-role="listview" data-inset="true">
+                            <li data-role="list-divider">Order No : 86542454542121<span class="ui-li-count">2</span></li>
+                            <li><a href="orderdetails.html">
+                                <p>Container : 20 Ft</p>
+                                <p>Loadability: 98%</p>
+                                <p><span>Expected to Ship: 12/12/2005</span></p>
+                                <p>Vessel Number : 98%</p>
+                                <p>BL No : 20 Ft</p>
+                                <p><span>Inv Value: $23655</span></p>
+                                <p class="order_status odr_pending">Pending</p>
+                            </a></li>
+                            <li data-role="list-divider">Order No : 86542454542121<span class="ui-li-count">2</span></li>
+                            <li><a href="orderdetails.html">
+                                <p>Container : 20 Ft</p>
+                                <p>Loadability: 98%</p>
+                                <p><span>Expected to Ship: 12/12/2005</span></p>
+                                <p>Vessel Number : 98%</p>
+                                <p>BL No : 20 Ft</p>
+                                <p><span>Inv Value: $23655</span></p>
+                                <p class="order_status odr_dispatched">Dispatched</p>
+                            </a></li>
+                            <li data-role="list-divider">Order No : 86542454542121<span class="ui-li-count">2</span></li>
+                            <li><a href="orderdetails.html">
+                                <p>Container : 20 Ft</p>
+                                <p>Loadability: 98%</p>
+                                <p><span>Expected to Ship: 12/12/2005</span></p>
+                                <p>Vessel Number : 98%</p>
+                                <p>BL No : 20 Ft</p>
+                                <p><span>Inv Value: $23655</span></p>
+                                <p class="order_status odr_finalinv">In Transit</p>
+                            </a></li>
+                            <li data-role="list-divider">Order No : 86542454542121<span class="ui-li-count">2</span></li>
+                            <li><a href="orderdetails.html">
+                                <p>Container : 20 Ft</p>
+                                <p>Loadability: 98%</p>
+                                <p><span>Expected to Ship: 12/12/2005</span></p>
+                                <p>Vessel Number : 98%</p>
+                                <p>BL No : 20 Ft</p>
+                                <p><span>Inv Value: $23655</span></p>
+                                <p class="order_status odr_finalinv">In Transit</p>
+                            </a></li>
+                            <li data-role="list-divider">Order No : 86542454542121<span class="ui-li-count">2</span></li>
+                            <li><a href="orderdetails.html">
+                                <p>Container : 20 Ft</p>
+                                <p>Loadability: 98%</p>
+                                <p><span>Expected to Ship: 12/12/2005</span></p>
+                                <p>Vessel Number : 98%</p>
+                                <p>BL No : 20 Ft</p>
+                                <p><span>Inv Value: $23655</span></p>
+                                <p class="order_status odr_finalinv">In Transit</p>
+                            </a></li>
+                            <li data-role="list-divider">Order No : 86542454542121<span class="ui-li-count">2</span></li>
+                            <li><a href="orderdetails.html">
+                                <p>Container : 20 Ft</p>
+                                <p>Loadability: 98%</p>
+                                <p><span>Expected to Ship: 12/12/2005</span></p>
+                                <p>Vessel Number : 98%</p>
+                                <p>BL No : 20 Ft</p>
+                                <p><span>Inv Value: $23655</span></p>
+                                <p class="order_status odr_finalinv">In Transit</p>
+                            </a></li>
+                            <li data-role="list-divider">Order No : 86542454542121<span class="ui-li-count">2</span></li>
+                            <li><a href="orderdetails.htmls">
+                                <p>Container : 20 Ft</p>
+                                <p>Loadability: 98%</p>
+                                <p><span>Expected to Ship: 12/12/2005</span></p>
+                                <p>Vessel Number : 98%</p>
+                                <p>BL No : 20 Ft</p>
+                                <p><span>Inv Value: $23655</span></p>
+                                <p class="order_status odr_finalinv">In Transit</p>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div id="two" class="ui-content">
+                        <form class="ui-filterable" role="search">
+                            <input id="filterBasic-input" placeholder="Search items..." data-type="search">
+                        </form>
+                        <table data-role="table" id="table-custom-2" data-mode="columntoggle" class="ui-body-d ui-shadow table-stripe ui-responsive" data-column-btn-theme="b" data-column-btn-text="Columns to display..." data-column-popup-theme="a">
+                            <thead>
+                                <tr class="ui-bar-d">
+                                    <th data-priority="2">Sr No</th>
+                                    <th>Item Name</th>
+                                    <th data-priority="3">Quantity</th>
+                                    <th data-priority="4">Kgs</th>
+                                    <th data-priority="6">Rate</th>
+                                    <th data-priority="1">Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>1</th>
+                                    <td><a href="http://en.wikipedia.org/wiki/Citizen_Kane" data-rel="external">Chilli Powder(1 x 25 kgs)</a></td>
+                                    <td>100</td>
+                                    <td>2500</td>
+                                    <td>10 $ </td>
+                                    <td>25000 $</td>
+                                </tr>
+                                <tr>
+                                    <th>2</th>
+                                    <td><a href="http://en.wikipedia.org/wiki/Casablanca_(film)" data-rel="external">Turmeric Powder(10 x 100 gms)</a></td>
+                                    <td>50</td>
+                                    <td>50</td>
+                                    <td>12 $</td>
+                                    <td>600 $</td>
+                                </tr>
+                                <tr>
+                                    <th>3</th>
+                                    <td><a href="http://en.wikipedia.org/wiki/The_Godfather" data-rel="external">Fenugreek Seeds(20 x 200 gms)</a></td>
+                                    <td>45</td>
+                                    <td>180</td>
+                                    <td>15 $</td>
+                                    <td>2700 $</td>
+                                </tr>
+                                <tr>
+                                    <th>4</th>
+                                    <td><a href="http://en.wikipedia.org/wiki/Gone_with_the_Wind_(film)" data-rel="external">Cumin Powder(1 x 10 kgs)</a></td>
+                                    <td>90</td>
+                                    <td>900</td>
+                                    <td>5 $</td>
+                                    <td>4500 $</td>
+                                </tr>
+                                <tr>
+                                    <th>5</th>
+                                    <td><a href="http://en.wikipedia.org/wiki/Lawrence_of_Arabia_(film)" data-rel="external">Coriander Powder(10 x 800 gms)</a></td>
+                                    <td>80</td>
+                                    <td>640</td>
+                                    <td>10 $</td>
+                                    <td>6400 $</td>
+                                </tr>
+                                <tr>
+                                    <th>6</th>
+                                    <td><a href="http://en.wikipedia.org/wiki/Dr._Strangelove" data-rel="external">Fennal Seeds(20 x 400 gms)</a></td>
+                                    <td>95</td>
+                                    <td>760</td>
+                                    <td>15 $</td>
+                                    <td>11400 $</td>
+                                </tr>
+                                <tr>
+                                    <th>7</th>
+                                    <td><a href="http://en.wikipedia.org/wiki/The_Graduate" data-rel="external">Seasame Seeds(1 x 25 kgs)</a></td>
+                                    <td>65</td>
+                                    <td>1625</td>
+                                    <td>8 $</td>
+                                    <td>13000 $</td>
+                                </tr>
+                                <tr>
+                                    <th>8</th>
+                                    <td><a href="http://en.wikipedia.org/wiki/The_Wizard_of_Oz_(1939_film)" data-rel="external">Chilli Whole(1 x 20 kgs)</a></td>
+                                    <td>75</td>
+                                    <td>1500</td>
+                                    <td>10 $</td>
+                                    <td>750 $</td>
+                                </tr>
+                                <tr>
+                                    <th>9</th>
+                                    <td><a href="http://en.wikipedia.org/wiki/Singin%27_in_the_Rain" data-rel="external">Turmeric Whole(1 x 10 kgs)</a></td>
+                                    <td>100</td>
+                                    <td>1000</td>
+                                    <td>12 $</td>
+                                    <td>12000 $</td>
+                                </tr>
+                                <tr>
+                                    <th>10</th>
+                                    <td class="title"><a href="http://en.wikipedia.org/wiki/Inception" data-rel="external">Mamra Basmati(20 x 400 gms)</a></td>
+                                    <td>50</td>
+                                    <td>400</td>
+                                    <td>12 $</td>
+                                    <td>4800 $</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                     <div id="three" class="ui-content">
+                         <img src="img/Untitled-2.png" />
+                         </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div data-role="footer" data-position="fixed" data-tap-toggle="false" class="jqm-footer">
+        <p>Kitchen Express <span class="jqm-version"></span></p>
+        <p>Copyright 2014 The jQuery Foundation</p>
+    </div>
+
+
+</body>
+</html>

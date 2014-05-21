@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Order Details</title>
+    <script src="js/jquery-1.11.1.js" charset="utf-8"></script>
+    <link href="css/TableCSSCode.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.2.css">
+    <script type="text/javascript" charset="utf-8" src="cordova.js" ></script>
+    <script type="text/javascript" charset="utf-8" ></script>
+    <script src="js/jquery-ui-1.10.4.custom.js"></script>
+    <script src="js/jquerymobile/jquery.mobile-1.4.2.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#grid").html(prepareGrid());
+
+        });
+        function onLoad() {
+            document.addEventListener("deviceready", onDeviceReady, false);
+            
+        }
+        function onDeviceReady() {
+            // Register the event listener
+            document.addEventListener("backbutton", onBackKeyDown, false);
+        }
+        function onBackKeyDown() {
+            if (confirm("Would you like to logout?")) {
+                window.location = "login.html";
+            }
+        }
+
+        
+        function prepareGrid() {
+            "use strict";
+            var html = "<table><tr>", records = 10, curdt = new Date(), i = 0;
+            html += "<td>Order No.</td>";
+            html += "<td>Date</td>";
+            html += "<td>Party Name</td>";
+            html += "<td>Status</td></tr>";
+            for (i = 1; i <= records; i = i + 1) {
+                html += "<tr><td>" + i + "</td>";
+                html += "<td>" + curdt.getDate() + '/' + curdt.getMonth() + '/' + curdt.getFullYear() +  "</td>";
+                html += "<td>" + "ABC" + "</td>";
+                html += "<td>" + "Pending" + "</td></tr>";
+            }
+            html += "</table>";
+            return html;
+        }
+    </script>
+</head>
+<body onload="onLoad();">
+    
+    
+    <div data-role=page data-add-back-btn=true>
+        <div data-role=header>
+            <h1>Order Details</h1>
+        </div>
+        <div data-role=content>
+            <div id="grid" class="CSSTableGenerator">
+        
+            </div>
+        </div>
+        <div data-role=footer data-position="fixed">
+            <h1>XMX Solution</h1>
+        </div>
+
+    </div>
+</body>
+</html>

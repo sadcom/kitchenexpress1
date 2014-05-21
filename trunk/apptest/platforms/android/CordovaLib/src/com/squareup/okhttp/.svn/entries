@@ -1,0 +1,154 @@
+10
+
+dir
+0
+https://github.com/sadcom/kitchenexpress.git/trunk/apptest/platforms/android/CordovaLib/src/com/squareup/okhttp
+https://github.com/sadcom/kitchenexpress.git
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a727069c-d8eb-30ad-87a4-ce57b7db7bff
+
+Connection.java
+file
+
+
+
+add
+
+OkAuthenticator.java
+file
+
+
+
+add
+
+OkHttpClient.java
+file
+
+
+
+add
+
+Job.java
+file
+
+
+
+add
+
+OkResponseCache.java
+file
+
+
+
+add
+
+TunnelRequest.java
+file
+
+
+
+add
+
+ResponseSource.java
+file
+
+
+
+add
+
+MediaType.java
+file
+
+
+
+add
+
+HttpResponseCache.java
+file
+
+
+
+add
+
+RouteDatabase.java
+file
+
+
+
+add
+
+Address.java
+file
+
+
+
+add
+
+Dispatcher.java
+file
+
+
+
+add
+
+Failure.java
+file
+
+
+
+add
+
+Request.java
+file
+
+
+
+add
+
+ConnectionPool.java
+file
+
+
+
+add
+
+internal
+dir
+
+
+
+add
+
+Response.java
+file
+
+
+
+add
+
+Route.java
+file
+
+
+
+add
+

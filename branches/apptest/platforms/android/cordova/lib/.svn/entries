@@ -1,0 +1,189 @@
+10
+
+dir
+0
+https://github.com/sadcom/kitchenexpress.git/trunk/apptest/platforms/android/cordova/lib
+https://github.com/sadcom/kitchenexpress.git
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a727069c-d8eb-30ad-87a4-ce57b7db7bff
+
+run.js
+file
+
+
+
+add
+
+check_reqs.js
+file
+
+
+
+add
+
+start-emulator
+file
+
+
+
+add
+
+list-started-emulators
+file
+
+
+
+add
+
+start-emulator.bat
+file
+
+
+
+add
+
+list-devices
+file
+
+
+
+add
+
+install-emulator
+file
+
+
+
+add
+
+log.js
+file
+
+
+
+add
+
+list-started-emulators.bat
+file
+
+
+
+add
+
+clean.js
+file
+
+
+
+add
+
+exec.js
+file
+
+
+
+add
+
+list-devices.bat
+file
+
+
+
+add
+
+install-emulator.bat
+file
+
+
+
+add
+
+android_sdk_version.js
+file
+
+
+
+add
+
+emulator.js
+file
+
+
+
+add
+
+spawn.js
+file
+
+
+
+add
+
+install-device
+file
+
+
+
+add
+
+list-emulator-images
+file
+
+
+
+add
+
+appinfo.js
+file
+
+
+
+add
+
+install-device.bat
+file
+
+
+
+add
+
+list-emulator-images.bat
+file
+
+
+
+add
+
+build.js
+file
+
+
+
+add
+
+device.js
+file
+
+
+
+add
+

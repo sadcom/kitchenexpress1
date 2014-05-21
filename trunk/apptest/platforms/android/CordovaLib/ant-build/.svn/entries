@@ -1,0 +1,105 @@
+10
+
+dir
+0
+https://github.com/sadcom/kitchenexpress.git/trunk/apptest/platforms/android/CordovaLib/ant-build
+https://github.com/sadcom/kitchenexpress.git
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a727069c-d8eb-30ad-87a4-ce57b7db7bff
+
+rsObj
+dir
+
+
+
+add
+
+proguard.txt
+file
+
+
+
+add
+
+AndroidManifest.cordova.xml
+file
+
+
+
+add
+
+dexedLibs
+dir
+
+
+
+add
+
+AndroidManifest.xml.d
+file
+
+
+
+add
+
+classes.jar
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+res
+dir
+
+
+
+add
+
+classes
+dir
+
+
+
+add
+
+build.prop
+file
+
+
+
+add
+
+rsLibs
+dir
+
+
+
+add
+
